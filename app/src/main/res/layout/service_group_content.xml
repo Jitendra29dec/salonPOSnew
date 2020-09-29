@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/dateTextViewGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/timeEditTextGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_duration_bg"
+        android:drawableEnd="@drawable/ic_start_time"
+        android:gravity="center"
+        android:inputType="time"
+        android:paddingEnd="@dimen/_3sdp" />
+
+    <LinearLayout
+        android:id="@+id/serviceEditTextGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/login_editext"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/serviceSpinnerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stylistLinearLayoutGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/login_editext"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/stylistSpinnerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/login_editext"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:text="$" />
+
+        <TextView
+            android:id="@+id/priceTextViewGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:inputType="time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/login_editext"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/durationTextViewGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".68"
+            android:gravity="center"
+            android:inputType="time" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="center|start"
+            android:text="M" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deleteGroupElement"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="match_parent"
+        android:rotation="45"
+        android:src="@drawable/close" />
+
+
+</LinearLayout>

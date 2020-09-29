@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout">
+
+    <TextView
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/empName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24sdp"
+        android:maxLines="1"
+        android:paddingStart="@dimen/_2sdp"
+        android:text="Test"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+</LinearLayout>

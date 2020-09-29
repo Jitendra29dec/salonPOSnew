@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lion123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/customer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/btnAddCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/btn_dark_blue"
+            android:drawableStart="@drawable/add_icon"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="Add Customer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp" />
+
+        <EditText
+            android:id="@+id/searchCustomerEditText"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnAddCustomer"
+            android:background="@drawable/rounded_corner_grey_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/search_here"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp" />
+
+
+    </RelativeLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lion123"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_15sdp"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/searchCustomerEditText"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_10sdp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginStart="@dimen/_8sdp"-->
+    <!--            android:layout_marginTop="@dimen/_2sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+    <!--            android:background="@drawable/bar"-->
+    <!--            android:drawableEnd="@drawable/ic_search_black_24dp"-->
+    <!--            android:gravity="center|start"-->
+    <!--            android:hint="Search by Customer Name/Number"-->
+    <!--            android:paddingStart="@dimen/_8sdp"-->
+    <!--            android:textColor="@color/colorPrimary"-->
+    <!--            android:textSize="@dimen/_6sdp" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/customerTetView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="@dimen/_10sdp"-->
+    <!--        android:layout_marginTop="@dimen/_4sdp"-->
+    <!--        android:drawableStart="@drawable/ic_person_black_24dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:padding="@dimen/_1sdp"-->
+    <!--        android:text="Customers"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/_6sdp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lion123" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/sd"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height=".5dp"-->
+    <!--        android:background="#000"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/customerTetView" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/buttonsLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_18sdp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/sd">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fontFamily="serif"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="#26A69A" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="@dimen/_2sdp"-->
+    <!--            android:background="@drawable/edit_text_drawable"-->
+    <!--            android:backgroundTint="#56A7CD"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_2sdp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_7sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/add_icon" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Active Selective"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="@dimen/_2sdp"-->
+    <!--            android:background="@drawable/edit_text_drawable"-->
+    <!--            android:backgroundTint="#56A7CD"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_2sdp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_7sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/ic_remove_black_24dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Inactive Selected"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="@dimen/_2sdp"-->
+    <!--            android:background="@drawable/edit_text_drawable"-->
+    <!--            android:backgroundTint="#F18582"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_2sdp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_7sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/add_icon" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Delete Selected"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="@dimen/_2sdp"-->
+    <!--            android:background="@drawable/edit_text_drawable"-->
+    <!--            android:backgroundTint="#007CB7"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_2sdp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_7sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/ic_remove_black_24dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Add New Customer"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="@dimen/_2sdp"-->
+    <!--            android:background="@drawable/edit_text_drawable"-->
+    <!--            android:backgroundTint="#1CBA63"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="@dimen/_2sdp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="@dimen/_7sdp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/add_icon" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Import Customer"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_2sdp" />
+
+</LinearLayout>

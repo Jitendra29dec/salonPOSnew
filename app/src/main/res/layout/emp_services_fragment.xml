@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hubwallet.apptspos.employes.service.EmpServicesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/empServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/saveEmpService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:background="@drawable/blue_btn"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_gravity="right"
+        android:paddingBottom="10dp"
+        android:text="@string/save_services"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

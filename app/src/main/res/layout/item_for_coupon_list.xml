@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:orientation="horizontal"
+    android:id="@+id/parentLayout">
+
+    <TextView
+        android:id="@+id/couponCode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="CouponCode"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/couponFor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Coupon For"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/discountType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Discount Type"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Discount"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/validFrom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:text="Valid From"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/validTill"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:text="Valid Til"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="#000" />
+
+
+</LinearLayout>

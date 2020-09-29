@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Select Reason"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroupReasons"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioButton
+                    android:id="@+id/clockInButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/choice_button_drawale"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:tag="clockin"
+                    android:text="Clockin"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/clockOutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/choice_button_drawale"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:tag="clockout"
+                    android:text="ClockOut"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/leaveForBreakButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/choice_button_drawale"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:tag="leave_for_break"
+                    android:text="Leave For Break "
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/backFromBreakButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/choice_button_drawale"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:tag="back_from_break"
+                    android:text="Back From Break "
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/emergencyCheckoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/choice_button_drawale"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:tag="emergency_clockout"
+                    android:text="Emergency clockout "
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/submitButtonReason"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#673AB7"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_6sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,442 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lion123"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="Stylist Type"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext">
+
+                            <Spinner
+                                android:id="@+id/stylistTypeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/type" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="First Name"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/firstNameStylist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="First Name"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="Last Name"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <EditText
+                            android:id="@+id/lastNameStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="Last Name"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="Nick Name"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/nickNameStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="Nick Name"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="Email"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/emailStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="Email"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="Phone"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <EditText
+                            android:id="@+id/phoneStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="Phone"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="Alternate Phone"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/alternatePhoneStylist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+
+                            android:hint="Alternate Phone"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="Country"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext">
+
+                            <Spinner
+                                android:id="@+id/countrySpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="State"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext">
+
+                            <Spinner
+                                android:id="@+id/stateSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="City"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/cityStylist"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="City"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="Postal"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <EditText
+                            android:id="@+id/postalStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:hint="Postal"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_10sdp"
+                            android:text="Address"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <EditText
+                            android:id="@+id/addressStylist"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@drawable/login_editext"
+                            android:gravity="top"
+                            android:hint="Address"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:textSize="@dimen/_6sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStylistDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStylistTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp" />
+
+
+                <Button
+                    android:id="@+id/addImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/colorAccent"
+                    android:text="Add Image"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Button
+                    android:id="@+id/addStylistButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/colorPrimary"
+                    android:text="Add Stylist"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarStylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_2sdp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroupRebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonOff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rebook_buttons_drawable"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Off"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDaily"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rebook_buttons_drawable"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Daily"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonWeekly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rebook_buttons_drawable"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Weekly"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMonthly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rebook_buttons_drawable"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Monthly"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYearly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rebook_buttons_drawable"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Yearly"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutReebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_2sdp" />
+
+</LinearLayout>

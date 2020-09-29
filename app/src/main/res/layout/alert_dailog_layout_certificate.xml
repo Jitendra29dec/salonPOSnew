@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <TextView
+        android:id="@+id/titleTextVIew"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center|start"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:text="@string/certificate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/closeImageViewCertificate"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_cancel_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/certificateNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Certificate Number "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextVIew" />
+
+    <TextView
+        android:id="@+id/templateTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Template Type"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/templateLayout"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextVIew" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Message"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/templateLayout"
+        app:layout_constraintTop_toBottomOf="@+id/templateLayout" />
+
+    <TextView
+        android:id="@+id/selectServiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Select Service "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/certificateNumberField" />
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Type "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/serviceLayout" />
+
+    <TextView
+        android:id="@+id/issueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Issue Date "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/typeLayout" />
+
+    <TextView
+        android:id="@+id/expiryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Expiry Date "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/issueDateField" />
+
+    <TextView
+        android:id="@+id/recipientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Recipient Name "
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/expiryDateField" />
+
+    <EditText
+        android:id="@+id/certificateNumberField"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:hint="Get Certificate Number"
+        android:paddingStart="8dp"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/certificateNumberTextView" />
+
+    <EditText
+        android:id="@+id/issueDateField"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:hint="dd-mm-yy"
+        android:paddingStart="8dp"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/issueTextView" />
+
+    <EditText
+        android:id="@+id/expiryDateField"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:hint="dd-mm-yy"
+        android:paddingStart="8dp"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/expiryTextView" />
+
+    <EditText
+        android:id="@+id/messageField"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:gravity="start|top"
+        android:hint="message"
+        android:inputType="textMultiLine"
+        android:paddingStart="8dp"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/messageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/messageTextView" />
+
+    <LinearLayout
+        android:id="@+id/serviceLayout"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/selectServiceTextView">
+
+        <Spinner
+            android:id="@+id/serviceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeLayout"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/typeTextView">
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recipientLayout"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalStart"
+        app:layout_constraintTop_toBottomOf="@+id/recipientTextView">
+
+        <Spinner
+            android:id="@+id/recipientSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/templateLayout"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/certificate_drawable"
+        android:textColor="#525252"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineVerticalEnd"
+        app:layout_constraintTop_toBottomOf="@+id/templateTypeTextView">
+
+        <Spinner
+            android:id="@+id/templateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineVerticalEnd"
+        app:layout_constraintTop_toBottomOf="@+id/recipientLayout">
+
+        <Button
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:background="#EF5350"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="#5C6BC0"
+            android:text="Add"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/linLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

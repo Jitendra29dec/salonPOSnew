@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spnService"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_bg" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spnStylest"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_bg" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:text="$" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/priceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/minusTv"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="-" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/durationEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp"  />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/plusTv"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="+" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeEdt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_1sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp"  />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@color/bg_grey"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pointEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_1sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp"
+            android:layout_margin="2dp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:text="pts" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/removeImg"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:contentDescription="@string/bookappointment"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_circle_close_red" />
+</LinearLayout>

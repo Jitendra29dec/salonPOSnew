@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/add_deposit_amount"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:fontFamily="@font/raleway_medium" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            android:id="@+id/closeImg"
+            app:srcCompat="@drawable/ic_close_white" />
+    </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Customer Name"
+                android:textColor="#000"
+                android:textSize="@dimen/_6sdp"
+                app:fontFamily="@font/raleway_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnCustomer"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight=".8"
+                    android:background="@drawable/spinner_bg" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_weight=".2"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:gravity="bottom"
+                    android:text="+Add Customer"
+                    android:textColor="@color/sky_blue"
+                    app:fontFamily="@font/raleway_medium" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:text="No. of customer"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Deposit Amount"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCustCount"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_grey_bg"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtDepositAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_grey_bg"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Start Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="End Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dateTimeRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_weight=".2"
+                android:gravity="bottom"
+                android:id="@+id/addMoreTv"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Add More"
+                android:textColor="@color/sky_blue"
+                app:fontFamily="@font/raleway_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:text="Distribution Type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Event Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp"
+                    app:fontFamily="@font/raleway_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnDistribution"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/eventNameEdt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_grey_bg"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:text="Event Note"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6sdp"
+                app:fontFamily="@font/raleway_medium" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/eventNoteEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_grey_bg"
+                android:minHeight="@dimen/_60sdp"
+                android:paddingStart="@dimen/_2sdp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/overdraftCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Overdraft"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        android:visibility="visible" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/overdraftEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_18sdp"
+        android:minWidth="@dimen/_150sdp"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:paddingStart="@dimen/_2sdp"
+        android:textColor="@color/black" />
+
+</LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/ioLimitCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Change Iou from credit card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6sdp"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/shareDepositCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Share Deposit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6sdp"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner_grey_bg"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_6sdp" />
+
+                <Button
+                    android:id="@+id/addDepositBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/btn_sky_blue"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_6sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

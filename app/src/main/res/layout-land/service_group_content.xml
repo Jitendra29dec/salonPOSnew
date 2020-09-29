@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_2sdp">
+
+
+    <TextView
+        android:id="@+id/dateTextViewGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <TextView
+        android:id="@+id/timeEditTextGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_duration_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        app:drawableEndCompat="@drawable/ic_start_time" />
+
+    <Spinner
+        android:id="@+id/serviceSpinnerGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_bg" />
+
+    <Spinner
+        android:id="@+id/stylistSpinnerGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_bg" />
+
+    <TextView
+        android:id="@+id/priceTextViewGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_price_bg"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        app:drawableStartCompat="@drawable/ic_dollar" />
+
+    <TextView
+        android:id="@+id/durationTextViewGroup"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_duration_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        app:drawableEndCompat="@drawable/ic_time_duration" />
+
+    <ImageView
+        android:id="@+id/deleteGroupElement"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:contentDescription="@string/group_appointment"
+        android:padding="@dimen/_2sdp"
+        android:src="@drawable/ic_circle_add_blue" />
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hubwallet.apptspos.employes.pin.EmpPinFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pin_"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:fontFamily="@font/raleway_medium" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="300dp"
+            android:id="@+id/pinEdt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_bg_gray"
+            android:inputType="number"
+            android:paddingHorizontal="@dimen/_4sdp"
+            android:paddingVertical="@dimen/_2sdp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/or"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/raleway_medium" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/genratePinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/generate_pin_bg"
+        android:paddingVertical="@dimen/_2sdp"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/generate_pin"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/raleway" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/saveEmpPinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/blue_btn"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/save_pin"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

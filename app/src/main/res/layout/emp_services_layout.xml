@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <CheckBox
+        android:id="@+id/serviceCb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hair Cut"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:textColor="@color/black" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/priceEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:paddingTop="@dimen/_4sdp"
+        android:inputType="number"
+
+        android:paddingStart="6dp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:background="@drawable/edt_bg_gray"
+        android:textColor="@color/black" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/durationEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingStart="6dp"
+        android:inputType="number"
+        android:paddingBottom="@dimen/_4sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:background="@drawable/edt_bg_gray"
+        android:textColor="@color/black" />
+</LinearLayout>

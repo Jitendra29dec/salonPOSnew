@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|start"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTextViewPopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="dads"
+                android:textColor="#000"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeTextviewPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="start"
+                android:text="dawd"
+                android:textSize="@dimen/_8sdp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/newAppointmentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/ic_red_rounded_corner"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/appointment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newAppoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|start"
+                    android:text="@string/new_appointment"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_7sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_a_new_appointment"
+                    android:textSize="@dimen/_5sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/very_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/groupAppointmentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:contentDescription="@string/group_appointment"
+                android:background="@drawable/ic_group_bg"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_group" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/groupAppoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_appointment"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_7sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_group_appointment"
+                    android:textSize="@dimen/_5sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/very_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/addDepositLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/ic_deposit_bg"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_deposit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_deposit"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_7sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_a_deposit_booking"
+                    android:textSize="@dimen/_5sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addToWaitListLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:tag="2"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#FFAC66"
+                    app:cardCornerRadius="@dimen/_4sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/wishlist" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/addToWaitList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toEndOf="@id/card2"
+                    android:gravity="bottom|start"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="Add to WaitList"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_5sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@+id/addToWaitList"
+                    android:layout_toEndOf="@id/card2"
+                    android:gravity="top"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:text="@string/add_customer_to_waitlist"
+                    android:textSize="@dimen/_5sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personalTaskLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:tag="3"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3897F0"
+                    app:cardCornerRadius="@dimen/_4sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/personaltalk" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/personalTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toEndOf="@id/card3"
+                    android:gravity="bottom|start"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="@string/personal_task"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_5sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@+id/personalTask"
+                    android:layout_toEndOf="@id/card3"
+                    android:gravity="top"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:text="@string/create_personal_task"
+                    android:textSize="@dimen/_5sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editWorkingHourLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#7CC576"
+                    app:cardCornerRadius="@dimen/_4sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/editworkinghour" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/editWorkingHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toEndOf="@id/card4"
+                    android:gravity="bottom|start"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="Edit Working Hour"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_5sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@+id/editWorkingHour"
+                    android:layout_toEndOf="@id/card4"
+                    android:gravity="top"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:text="@string/edit_your_working_hour"
+                    android:textSize="@dimen/_5sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

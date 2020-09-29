@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="CouponCode"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Coupon For"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Discount Type"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Discount"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Valid From"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Valid Til"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="#000" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calanderConfig"
+        android:title="Calendar Configuration"/>
+
+    <item
+        android:id="@+id/calendarColour"
+        android:title="Calendar Color" />
+
+    <item
+        android:id="@+id/photoGallery"
+        android:title="Photo Gallery" />
+
+    <item
+        android:title="Color Themes"
+        android:id="@+id/colourTheme"/>
+
+    <item
+        android:title="TV Screen"
+        android:id="@+id/tvScreen"/>
+
+
+    <item
+        android:title="Screen Lock"
+        android:id="@+id/screenLock"/>
+
+</menu>

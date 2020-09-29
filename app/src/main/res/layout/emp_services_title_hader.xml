@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bottom_selected_text_color">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/services"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:fontFamily="@font/raleway_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/price"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:fontFamily="@font/raleway_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/duration"
+        app:fontFamily="@font/raleway_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22sdp"
+            android:background="@drawable/header_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="Customer Information"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+
+            <ImageButton
+                android:id="@+id/activityCloseButton"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/_3sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_close_white" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/firstNameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="First Name"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="CC Appointment Email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editCCAppointmentEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Enter CC Appointment Email"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="First Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <Spinner
+                        android:id="@+id/spinCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Mobile No"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Enter Mobile No"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Preferred Contact"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <Spinner
+                        android:id="@+id/spinPreferredContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/spinner_bg" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/lastNameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Last Name"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Gender *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <Spinner
+                        android:id="@+id/spinGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/spinner_bg" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="State *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <Spinner
+                        android:id="@+id/spinState"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Home Phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editHomePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Enter Home Phone"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Appointment Remember By *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkSMS"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_weight="1"
+                            android:text="SMS"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <CheckBox
+                            android:id="@+id/checkEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-Mail"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/emailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Last Name"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Referred By"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editReferredBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Enter Referred By"
+                        android:inputType="textCapWords"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="City *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Enter City"
+                        android:inputType="textCapWords"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Work Phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/editWorkPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:hint="Work Phone"
+                        android:inputType="phone"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:text="Address *"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6sdp" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@drawable/rounded_corner_grey_bg"
+                android:gravity="start"
+                android:hint="Work Phone"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/very_light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rounded_corner_grey_bg"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp" />
+
+        <Button
+            android:id="@+id/addCustomerBUtton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/btn_sky_blue"
+            android:padding="@dimen/_2sdp"
+            android:text="Add Customer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/cc"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="221dp"-->
+    <!--        android:layout_marginTop="@dimen/_1sdp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:paddingBottom="@dimen/_4sdp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/basicDetails">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/linearLa"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_15sdp"-->
+    <!--            android:layout_marginStart="@dimen/_8sdp"-->
+    <!--            android:layout_marginTop="@dimen/_4sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/firstNameField"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/login_editext"-->
+    <!--                android:hint="First Name"-->
+    <!--                android:paddingStart="@dimen/_8sdp"-->
+    <!--                android:textSize="@dimen/_8sdp" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight=".1" />-->
+
+    <!--            <EditText-->
+
+    <!--                android:id="@+id/lastNameField"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/login_editext"-->
+    <!--                android:hint="Last Name"-->
+    <!--                android:paddingStart="@dimen/_8sdp"-->
+    <!--                android:textSize="@dimen/_8sdp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/emailField"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_15sdp"-->
+    <!--            android:layout_marginStart="@dimen/_8sdp"-->
+    <!--            android:layout_marginTop="@dimen/_6sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+    <!--            android:background="@drawable/login_editext"-->
+    <!--            android:hint="E-Mail"-->
+    <!--            android:paddingStart="@dimen/_8sdp"-->
+    <!--            android:textSize="@dimen/_8sdp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/linearLa" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/mobileField"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_15sdp"-->
+    <!--            android:layout_marginStart="@dimen/_8sdp"-->
+    <!--            android:layout_marginTop="@dimen/_6sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+    <!--            android:background="@drawable/login_editext"-->
+    <!--            android:hint="Mobile Number"-->
+    <!--            android:inputType="number"-->
+    <!--            android:maxLength="10"-->
+    <!--            android:paddingStart="@dimen/_8sdp"-->
+    <!--            android:singleLine="true"-->
+    <!--            android:textSize="@dimen/_8sdp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/emailField" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/cancelButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/_13sdp"-->
+    <!--            android:layout_marginStart="@dimen/_18sdp"-->
+    <!--            android:layout_marginTop="@dimen/_4sdp"-->
+    <!--            android:layout_marginBottom="@dimen/_14sdp"-->
+    <!--            android:background="#EF5350"-->
+    <!--            android:padding="@dimen/_2sdp"-->
+    <!--            android:text="Cancel"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="@dimen/_5sdp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/mobileField" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/addCustomerBUtton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/_13sdp"-->
+    <!--            android:layout_marginTop="@dimen/_4sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_18sdp"-->
+    <!--            android:background="#2196F3"-->
+    <!--            android:padding="@dimen/_2sdp"-->
+    <!--            android:text="Add Customer"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="@dimen/_5sdp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/mobileField" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</LinearLayout>

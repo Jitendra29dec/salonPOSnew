@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lion123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_5sdp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tabEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/employee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee"
+                        android:textStyle="bold"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:textColor="#bbbbbb"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/raleway_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textStyle="bold"
+                        android:textColor="#bbbbbb"
+                        android:textSize="10sp"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:fontFamily="@font/raleway_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabBooking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booking"
+                        android:textStyle="bold"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:textColor="#bbbbbb"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/raleway_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabThingsSell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvThingsSell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Things We Sell"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:textColor="#bbbbbb"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabLookFeel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLookFeel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Look &amp; Feel"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:textColor="#bbbbbb"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/raleway_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAdaOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add-Ons"
+                        android:textColor="#bbbbbb"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:fontFamily="@font/raleway_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:id="@+id/tabBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMarketing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marketing"
+                        android:textColor="#bbbbbb"
+                        android:textStyle="bold"
+                        android:drawableRight="@drawable/ic_drop_down_24dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f5f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/containerMainSubMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_2sdp"
+        android:visibility="gone"/>
+
+</LinearLayout>

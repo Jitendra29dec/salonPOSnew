@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="Add Service"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:paddingStart="@dimen/_1sdp"
+            android:text="Category"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:background="@drawable/login_editext">
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="@dimen/_1sdp"
+            android:text="Service Name"
+            android:textSize="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/serviceNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/login_editext"
+            android:hint="Enter service name"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="@dimen/_1sdp"
+            android:text="Service Price"
+            android:textSize="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/servicePriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/login_editext"
+            android:drawableStart="@drawable/ic_attach_money_black_24dp"
+            android:hint="Enter service price"
+            android:inputType="number"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="@dimen/_1sdp"
+            android:text="SKU"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/skuEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/login_editext"
+            android:hint="Enter SKU "
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="@dimen/_1sdp"
+            android:text="Duaration"
+            android:textSize="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/durationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/login_editext"
+            android:hint="Enter Duration here"
+            android:inputType="number"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/cancelServiceButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EF5350"
+                android:text="cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".2" />
+
+            <Button
+                android:id="@+id/addServiceButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#2196F3"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

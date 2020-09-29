@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Type"
+            android:textColor="#000"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Personal Time Off "
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Sick Day"
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Vacation "
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Holiday"
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Meeting "
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Lunch Break"
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Task"
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:paddingStart="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Note"
+            android:textColor="#000"
+            android:textSize="@dimen/_7sdp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Item"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:text="Barcode"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sku"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Sku"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/perPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Per Price"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Qty"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Price"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/spnDisscount"
+            android:layout_weight=".4"
+            android:background="@drawable/spinner_background_grey_drop"
+            android:text="Hait Rebonding" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/afterDiscount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Due"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/taxTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Tax"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/finalAmountTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:gravity="bottom"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="Final Amount"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:text="Delete"
+            android:id="@+id/deleteTv"
+            android:textColor="@color/sky_blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/dark_grey" />
+</LinearLayout>

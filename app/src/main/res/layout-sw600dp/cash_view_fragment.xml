@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight=".8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/priceEditTextCashFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_details"
+                    android:backgroundTint="#fff"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="serif"
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="30dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="#303F9F"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonCashFragment"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="14dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/cancel_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="6"
+                android:columnCount="3"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="66dp"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="00"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#673AB7"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:gravity="center"
+                        android:onClick="PrintPriceFunction"
+                        android:text="."
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".07" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:background="#9C27B0"
+                android:gravity="center|end"
+                android:paddingEnd="10dp"
+                android:text="Amount Remaining"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:background="@color/white"
+                android:fontFamily="serif"
+                android:gravity="end|center"
+                android:paddingEnd="10dp"
+                android:text="$1.97"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".1"
+                android:background="#3F51B5"
+                android:gravity="center|end"
+                android:paddingEnd="10dp"
+                android:text="Paid So Far"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight=".67"
+                android:background="@drawable/comment_drawable" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight=".2"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight=".6"
+            android:background="#D32F2F"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:weightSum="5">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#0288D1"
+                android:onClick="PrintPriceFunction"
+                android:text="$1.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#AB47BC"
+                android:onClick="PrintPriceFunction"
+                android:text="$2.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#C2185B"
+                android:onClick="PrintPriceFunction"
+                android:text="$5.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#303F9F"
+                android:onClick="PrintPriceFunction"
+                android:text="$20.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#FF7043"
+                android:onClick="PrintPriceFunction"
+                android:text="$50.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_weight=".5"
+                android:background="#AB47BC"
+                android:onClick="PrintPriceFunction"
+                android:text="$100.00"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+            <Button
+                android:id="@+id/collectButton"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:background="#388E3C"
+                android:text="Collect"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

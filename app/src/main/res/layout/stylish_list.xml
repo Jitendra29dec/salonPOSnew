@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lion123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/employees"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/btnAddService"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/btn_dark_blue"
+            android:drawableStart="@drawable/add_icon"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="Add Employee"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp" />
+
+        <EditText
+            android:id="@+id/searchstylistEditText"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnAddService"
+            android:background="@drawable/rounded_corner_grey_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/search_here"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stylistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsLayout" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/buttonsLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_18sdp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lion123">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fontFamily="serif"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="#26A69A" />-->
+
+    <!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/searchstylistEditText"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="@dimen/_10sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginStart="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginEnd="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/bar"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#F1F1F1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:drawableEnd="@drawable/ic_search_black_24dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:hint="Search Stylist"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:paddingStart="@dimen/_5sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:paddingEnd="@dimen/_5sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textSize="@dimen/_6sdp" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_margin="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/edit_text_drawable"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#56A7CD"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:padding="@dimen/_2sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="@dimen/_7sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/add_icon" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Show On Calendar"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/white" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_margin="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/edit_text_drawable"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#F18582"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:padding="@dimen/_2sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="@dimen/_7sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/ic_remove_black_24dp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Hide From Calendar"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/white" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_margin="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/edit_text_drawable"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#56A7CD"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:padding="@dimen/_2sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="@dimen/_7sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/add_icon" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Active Selective"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/white" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_margin="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/edit_text_drawable"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#F18582"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:padding="@dimen/_2sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="@dimen/_7sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/ic_remove_black_24dp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Inactive Selected"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/white" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_margin="@dimen/_2sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="@drawable/edit_text_drawable"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:backgroundTint="#1CBA63"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:padding="@dimen/_2sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="@dimen/_7sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/add_icon" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Add Emoloyee"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/white" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

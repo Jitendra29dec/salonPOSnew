@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f2f6f7"
+    tools:context="com.hubwallet.apptspos.fragments.EmailConfigFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_arrow_back_black"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Notification"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/btn_dark_blue"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/_20sdp"
+                app:fontFamily="@font/raleway_medium" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_grey" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_shape">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_marginStart="@dimen/_8sdp"
+            android:id="@+id/appointSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:checked="true"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When appointment is booked(email &amp; text)"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_marginStart="@dimen/_8sdp"
+            android:id="@+id/requestSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:checked="true"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation Request"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm before"/>
+
+        <EditText
+            android:id="@+id/requestTime"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:inputType="number"
+            android:background="@drawable/edt_bg_gray"
+            android:text="74"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_marginStart="@dimen/_8sdp"
+            android:id="@+id/reminderSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:checked="true"
+            android:textOff="OFF"
+            android:textOn="OF"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Reminder"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind before"/>
+
+        <EditText
+            android:id="@+id/reminderTime"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:inputType="number"
+            android:background="@drawable/edt_bg_gray"
+            android:text="24"/>
+
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/notificationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:checked="true"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textStyle="bold"
+            android:text="Send Notification to business"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/stylistSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="56dp"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#111"
+                android:textStyle="bold"
+                android:text="Send notification to stylist"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

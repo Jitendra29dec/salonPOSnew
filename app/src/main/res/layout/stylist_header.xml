@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".15"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Check"
+        android:textColor="#000"
+        android:textSize="@dimen/_8sdp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".35"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Services"
+        android:textColor="#000"
+        android:textSize="@dimen/_8sdp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Price($)"
+        android:textColor="#000"
+        android:textSize="@dimen/_8sdp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Duration"
+        android:textColor="#000"
+        android:textSize="@dimen/_8sdp" />
+</LinearLayout>

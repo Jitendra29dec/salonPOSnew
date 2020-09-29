@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every "
+                android:textColor="#000"
+                android:textSize="@dimen/_7sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:background="@drawable/notes_drawable"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:textSize="@dimen/_7sdp" />
+
+                <TextView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:gravity="center|start"
+                    android:text="Day"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_7sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textColor="#000"
+                android:textSize="@dimen/_7sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@drawable/notes_drawable"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/_2sdp"
+                android:text="MM-DD-YYYY"
+                android:textSize="@dimen/_7sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:textColor="#000"
+                android:textSize="@dimen/_7sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@drawable/notes_drawable"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:textSize="@dimen/_7sdp">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Sunday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Monday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Tuesday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Wednesday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Thursday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Friday"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rebook_buttons_drawable"
+                    android:baselineAligned="false"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Saturday"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_arrow_back_black"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/couponTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Add Coupon"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/btn_dark_blue"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:fontFamily="@font/raleway_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/discard_bg"
+                android:fontFamily="@font/raleway"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="Discard"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:fontFamily="@font/raleway_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_grey" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/very_light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f2f6f7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="4"
+                android:background="@drawable/bg_shape">
+
+                <ProgressBar
+                    android:id="@+id/progressBarAddProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coupon For *"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <Spinner
+                                android:id="@+id/couponForSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/spinner_bg" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Valid From *"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:id="@+id/validFromEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:gravity="center_vertical"
+                                android:hint="Enter Date"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:id="@+id/endTimeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:hint="Enter Time"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/btnCoupon"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:background="@drawable/blue_btn"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:text="Generate Coupon Code"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                app:fontFamily="@font/raleway_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Amount *"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <EditText
+                                android:id="@+id/amountEdiText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:hint="Enter Amount"
+                                android:inputType="number"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:id="@+id/startTimeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:hint="Enter Time"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Discount Type *"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <RadioGroup
+                                android:id="@+id/rGDiscountType"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rBtnFlat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:text="Flat"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rBtnPercentage"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:text="Percent"
+                                    android:checked="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </RadioGroup>
+
+                            <EditText
+                                android:id="@+id/coupon"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:hint="Enter Coupon"
+                                android:inputType="number"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Template *"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <Spinner
+                                android:id="@+id/templateSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/spinner_bg" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Valid Till*"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <TextView
+                                android:id="@+id/validTillEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_18sdp"
+                                android:background="@drawable/rounded_corner_grey_bg"
+                                android:hint="Enter Date"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <EditText
+                        android:id="@+id/descriptionEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:background="@drawable/rounded_corner_grey_bg"
+                        android:gravity="start"
+                        android:hint="Enter Description"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

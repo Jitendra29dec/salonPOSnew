@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">BookNPay</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="personal_talk">Personal Talk</string>
+    <string name="new_appointment">New Appointment</string>
+    <string name="create_a_new_appointment">Create a new Appointment</string>
+    <string name="add_customer_to_waitlist">Add customer to Waitlist</string>
+    <string name="personal_task">Personal Task</string>
+    <string name="create_personal_task">Create personal Task</string>
+    <string name="edit_your_working_hour">Edit your Working Hour</string>
+    <string name="notes">Notes</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="deny_the_appointment">Deny the appointment</string>
+    <string name="show">Show</string>
+    <string name="no_show">No Show</string>
+    <string name="client_did_not_show">Client did not show</string>
+    <string name="group_appointment">Group Appointment</string>
+    <string name="multiple_appointment">Multiple Appointment</string>
+    <string name="multiple_appointmentbook">Book Multiple Appointments</string>
+    <string name="create_multiple_appointment">Create multiple Appointment</string>
+    <string name="certificate">Certificate</string>
+    <string name="create_a_deposit_booking">Create a Deposit Booking</string>
+    <string name="add_deposit">Add Deposit</string>
+    <string name="create_group_appointment">Create Group Appointment</string>
+    <string name="employees">Employees</string>
+    <string name="search_here">Search here…</string>
+    <string name="customer">Customer</string>
+    <string name="customerstar">Customer*</string>
+    <string name="product">Product</string>
+    <string name="employee_details">Employee Details</string>
+    <string name="services">Services</string>
+    <string name="schedule">Schedule</string>
+    <string name="pin">Pin</string>
+    <string name="workshedule">Work Schedule</string>
+    <string name="gallery">Gallery</string>
+    <string name="bio_data">Bio Data</string>
+    <string name="employee_type">Employee Type *</string>
+    <string name="title">Title *</string>
+    <string name="first_name">First Name *</string>
+    <string name="username_name">Username *</string>
+    <string name="last_name">Last Name *</string>
+    <string name="email_id">Email Id *</string>
+    <string name="phone">Phone *</string>
+    <string name="alternative_phone">Alternative Phone</string>
+    <string name="state">State *</string>
+    <string name="city">City *</string>
+    <string name="password">Password *</string>
+    <string name="hourrate">Hourly Rate *</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="price">Price</string>
+    <string name="duration">Duration</string>
+    <string name="day">Day</string>
+    <string name="on_off">On/Off</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="save_employess">Save Employees</string>
+    <string name="save_services">Save Services</string>
+    <string name="address">Address</string>
+    <string name="save_schadule">Save Schadule</string>
+    <string name="save_bio_data">Save Bio Data</string>
+    <string name="pin_">PIN :</string>
+    <string name="or">OR</string>
+    <string name="generate_pin">Gendtate Pin</string>
+    <string name="save_pin">Save Pin</string>
+    <string name="save">Save</string>
+    <string name="mobile">Mobile*</string>
+    <string name="cc_email_id">CC Email</string>
+    <string name="gender">Gender *</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="add_deposit_amount">Add Deposit Amount</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="addgallery">Add Gallery</string>
+    <string name="show_hourtocustomer">Show hour to Customer</string>
+    <string name="appointmenttitle">Appointment Note</string>
+    <string name="writenote">Write Note</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="selectcustomer">Select Customer</string>
+    <string name="search_customer">Search Customer</string>
+    <string name="addEvent">Add Event</string>
+    <string name="adanotnote">Add Apt. Note</string>
+    <string name="bookappointment">Book Appointment</string>
+    <string name="addcustomer">Add Customer</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="saveaddservice">Add Service For</string>
+    <string name="service">Service</string>
+    <string name="numberservice">No.of Service</string>
+    <string name="stylish">Stylist</string>
+    <string name="bookgroupappintment">Book Group Appointment</string>
+    <string name="changeststus">Change Status</string>
+    <string name="appointmentconform">Appointment is Confirmed</string>
+    <string name="viewcustomernotes">View customer notes</string>
+    <string name="rebook">Rebook</string>
+    <string name="rebookappointment">Rebook the appointment</string>
+    <string name="checkout">Checkout</string>
+    <string name="editthisappointment">Edit this appointment</string>
+    <string name="edit">Edit</string>
+    <string name="move">Move</string>
+    <string name="moveappoinmentdifftime">Move appointment to different time</string>
+    <string name="titleofusers">Touchup,Haircut and Flat curling</string>
+    <string name="entereventsnote">Enter event note here...</string>
+    <string name="addEventnotes">Event Note</string>
+    <string name="addEventname">Event Name</string>
+    <string name="bookmultiple">Book Multiple Appointments</string>
+    <string name="addmoresevice">+ Add More Services</string>
+    <string name="appointnote">Appoiment Note</string>
+    <string name="addcustomerplus">+ Add Customer</string>
+    <string name="discard">Discard</string>
+    <string name="addnewcustomer">Add New Customer</string>
+    <string-array name="type">
+        <item>Permanent</item>
+        <item>Contract</item>
+    </string-array>
+    <string-array name="addOn">
+        <item>add on</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+</resources>

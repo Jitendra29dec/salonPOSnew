@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "288286298687",
+    "firebase_url": "https://bookandpaypos.firebaseio.com",
+    "project_id": "bookandpaypos",
+    "storage_bucket": "bookandpaypos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288286298687:android:b4ee8890f6fc07c7e59e8a",
+        "android_client_info": {
+          "package_name": "com.booknpay.apptspos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288286298687-vbr71v2dkitk8v4o5muei5jm2l9d25sc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX3ifH4zBhmtk1uNT3iVBlKKCUzVGqq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288286298687-vbr71v2dkitk8v4o5muei5jm2l9d25sc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

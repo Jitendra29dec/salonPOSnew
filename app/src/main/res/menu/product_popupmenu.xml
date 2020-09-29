@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/productList"
+        android:title="Product List" />
+
+    <item
+        android:id="@+id/category"
+        android:title="Category" />
+
+    <item
+        android:id="@+id/brand"
+        android:title="Brand" />
+
+    <item
+        android:id="@+id/vendorList"
+        android:title="Vendor List" />
+
+    <item
+        android:id="@+id/purchaseOrder"
+        android:title="Purchase Order" />
+
+    <item
+        android:id="@+id/receivedPurOrder"
+        android:title="Receive Purchase Order" />
+
+    <item
+        android:id="@+id/returnPurOrder"
+        android:title="Return Purchase Order" />
+
+</menu>

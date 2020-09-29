@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-device
+        class="255"
+        protocol="1"
+        subclass="66" />
+    <usb-device
+        product-id="0001"
+        vendor-id="1305" />   <!--IFBD-HU05/06, IFBD-HU07/08 - printerClass-->
+    <usb-device
+        product-id="0002"
+        vendor-id="1305" />   <!--IFBD-HU05/06, IFBD-HU07/08 - vendorClass-->
+    <usb-device
+        product-id="0003"
+        vendor-id="1305" />   <!--TSP100U/ECO/IIIU  - printerClass-->
+    <usb-device
+        product-id="0004"
+        vendor-id="1305" />   <!--TSP100U/ECO       - vendorClass-->
+    <usb-device
+        product-id="0005"
+        vendor-id="1305" />   <!--TSP100GT/IIIU     - printerClass-->
+    <usb-device
+        product-id="0006"
+        vendor-id="1305" />   <!--TSP100GT          - vendorClass-->
+    <usb-device
+        product-id="0009"
+        vendor-id="1305" />   <!--FVP10             - printerClass-->
+    <usb-device
+        product-id="0010"
+        vendor-id="1305" />   <!--FVP10             - vendorClass-->
+    <usb-device
+        product-id="0011"
+        vendor-id="1305" />   <!--BSC10             - printerClass-->
+    <usb-device
+        product-id="0012"
+        vendor-id="1305" />   <!--BSC10             - vendorClass-->
+    <usb-device
+        product-id="0017"
+        vendor-id="1305" />   <!--BSC10BR           - printerClass-->
+    <usb-device
+        product-id="0067"
+        vendor-id="1305" />   <!--SM-S210i/230i     - mobile printer-->
+    <usb-device
+        product-id="0023"
+        vendor-id="1305" />   <!--mPOP              - printerClass-->
+    <usb-device
+        product-id="0071"
+        vendor-id="1305" />   <!--mC-Print3         - printerClass-->
+    <usb-device
+        product-id="0073"
+        vendor-id="1305" />   <!--mC-Print2         - printerClass-->
+    <usb-device
+        product-id="0075"
+        vendor-id="1305" />   <!--SK1-211/221/V211  - printerClass-->
+    <usb-device
+        product-id="0077"
+        vendor-id="1305" />   <!--SK1-311/321/V311  - printerClass-->
+</resources>
+

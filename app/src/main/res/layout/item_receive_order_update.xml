@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/barcodeEdiText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        android:text="jbasdf"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        android:text="jbasdf"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:hint="Enter Barcode"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:hint="Enter Barcode"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:hint="Enter Barcode"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:hint="Enter Barcode"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/rounded_corner_grey_bg"
+        android:hint="Enter Barcode"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        android:text="jbasdf"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        android:text="jbasdf"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/btn_dark_blue"
+        android:text="Update"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginRight="@dimen/_6sdp"
+        app:fontFamily="@font/raleway_medium" />
+
+</LinearLayout>

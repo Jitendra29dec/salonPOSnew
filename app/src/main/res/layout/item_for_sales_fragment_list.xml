@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_20sdp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/person" />
+
+    <TextView
+
+        android:id="@+id/customernameSales"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingStart="@dimen/_6sdp"
+        android:text=" Customer Name"
+        android:textColor="#000"
+        android:textSize="@dimen/_6sdp" />
+
+    <TextView
+        android:id="@+id/totalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text=" $25 "
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_7sdp" />
+
+
+</LinearLayout>

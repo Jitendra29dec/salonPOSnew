@@ -1,0 +1,290 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F3F3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#F4F3F3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:gravity="center">
+
+        <CalendarView
+            android:id="@+id/calendarView12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="invisible" />
+
+        <com.thomashaertel.widget.MultiSpinner
+            android:id="@+id/spinnen"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_15sdp"
+
+            android:layout_below="@+id/calendarView12"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/login_editext"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/calendarView12"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:gravity="center|start"
+            android:text="Services"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/styl"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/appView"
+            android:layout_marginStart="@dimen/_8sdp"
+
+            android:gravity="center|start"
+            android:text="Stylist"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+
+
+            android:id="@+id/appointmentNote"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/spinnen"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:gravity="center|start"
+            android:text="Customer"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <AutoCompleteTextView
+
+            android:id="@+id/appView"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@id/appointmentNote"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/login_editext"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:drawablePadding="@dimen/_2sdp"
+            android:gravity="center|start"
+            android:hint="Search"
+            android:paddingStart="@dimen/_1sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:textSize="@dimen/_6sdp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/createCustomer"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/dateView"
+            android:gravity="center"
+            android:text="Time"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/createCustomer"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/createCustomer"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/Time"
+            android:gravity="center"
+            android:text="Duration"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/timeTextview"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/Time"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/dateEditText"
+            android:background="@drawable/login_editext"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/_1sdp"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+
+            android:id="@+id/dateEditText"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/Time"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:background="@drawable/login_editext"
+            android:drawableStart="@drawable/ic_event_black_24dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/_1sdp"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/minute"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/Duration"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/timeTextview"
+            android:background="@drawable/login_editext"
+            android:gravity="center"
+            android:hint="minute"
+            android:inputType="number"
+            android:textSize="@dimen/_6sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/timeTextview"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Appointment Note"
+            android:textColor="#464B51"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/custoemrVIew"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/customerName"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/login_editext"
+            android:gravity="start"
+            android:hint="Enter Note here"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:textSize="@dimen/_6sdp" />
+
+        <Spinner
+
+            android:id="@+id/createCustomer"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@id/styl"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/login_editext"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/custoemrVIew"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#D5D5D5" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/custoemrVIew"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelBut"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:gravity="center"
+                android:text="cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="#5C6BC0"
+                android:gravity="center"
+                android:text="checkout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5sdp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bookButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="#1B86DB"
+                android:gravity="center"
+                android:text="Book Appointment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

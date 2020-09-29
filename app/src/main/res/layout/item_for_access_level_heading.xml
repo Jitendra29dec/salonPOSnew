@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvCalendar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Calendar"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvSale"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Sale"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvMarketing"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Marketing"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvPointSale"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Point of Sale"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvSubscription"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Subscription"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Inventory"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvCustomer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Customer"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvStylist"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Stylist"
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/tvServices"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Services"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvSchedule"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Schedule"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tvReports"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Reports"
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#000" />
+
+</LinearLayout>

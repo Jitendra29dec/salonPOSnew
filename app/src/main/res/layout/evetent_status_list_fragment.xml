@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/customerInfoBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/very_light_grey">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="@dimen/_10sdp"-->
+        <!--            android:layout_height="@dimen/_10sdp"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginEnd="@dimen/_2sdp"-->
+        <!--            android:src="@drawable/ic_navigate_next_black_24dp"-->
+        <!--            android:visibility="invisible" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/popupImageView"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:src="@drawable/default_user"
+            app:civ_border_color="#000"
+            app:civ_border_width=".3dp" />
+
+        <TextView
+            android:id="@+id/customerNAmePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/popupImageView"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold"
+            tools:text="Customer Name"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/serviceNamePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerNAmePopup"
+            android:layout_toEndOf="@+id/popupImageView"
+            android:text="@string/titleofusers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_5sdp" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/serviceNamePopup"-->
+        <!--            android:layout_toEndOf="@+id/popupImageView"-->
+        <!--            android:text="Fri, June,26 at 10:30 AM"-->
+        <!--            android:textSize="@dimen/_5sdp"-->
+        <!--            android:visibility="invisible" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height=".5dp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:background="#B3B3B3" />-->
+
+        <ImageView
+            android:id="@+id/closeDialog"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/title"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_close_white" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventStatusRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_4sdp" />
+
+</LinearLayout>
