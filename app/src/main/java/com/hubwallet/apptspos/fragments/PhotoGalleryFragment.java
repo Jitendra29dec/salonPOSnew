@@ -38,6 +38,7 @@ import com.hubwallet.apptspos.Utils.Models.Gallery.PhotoData;
 import com.hubwallet.apptspos.Utils.Models.Gallery.PhotoDataList;
 import com.hubwallet.apptspos.Utils.PrefManager;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -81,14 +82,12 @@ public class PhotoGalleryFragment extends Fragment implements ApiCommunicator {
         stringRequest.setShouldCache(false);
         MySingleton.getInstance(getContext()).addToRequestQue(stringRequest);
 
-        upload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 101);
-            }
+
+        upload.setOnClickListener(view1 -> {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            intent.setType("image/*");
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 101);
         });
 
         return view;
@@ -164,12 +163,12 @@ public class PhotoGalleryFragment extends Fragment implements ApiCommunicator {
 
         client.newCall(request).enqueue(new Callback() {
             @Override
-            public void onFailure(Call call, IOException e) {
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
 
             }
 
             @Override
-            public void onResponse(Call call, okhttp3.Response response) throws IOException {
+            public void onResponse(@NotNull Call call, @NotNull okhttp3.Response response) throws IOException {
                 // imageUploading.dismiss();
                 //  String resultResponse = new String(response.body());
                 try {

@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.hubwallet.apptspos.fragments.ColourThemeFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.hubwallet.apptspos.fragments.ColourThemeFragment">
 
     <RelativeLayout
         android:id="@+id/lion123"
@@ -20,7 +20,8 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/_8sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:text="Colour Theme"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/colourtheme"
             android:textColor="@color/black"
             android:textSize="@dimen/_10sdp" />
 
@@ -34,36 +35,29 @@
             android:background="@drawable/btn_dark_blue"
             android:paddingStart="@dimen/_3sdp"
             android:paddingEnd="@dimen/_5sdp"
-            android:text="Update Calendar"
+            android:text="@string/updatecalender"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/_6sdp"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
         app:cardBackgroundColor="#f2f6f7"
         app:cardCornerRadius="1dp"
         app:cardElevation="1dp"
         app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        android:layout_margin="@dimen/_8sdp">
+        app:cardUseCompatPadding="true">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colourList"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/colourList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_8sdp"/>
-
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 

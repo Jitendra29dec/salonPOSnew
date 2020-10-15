@@ -123,6 +123,8 @@
     <string name="addcustomerplus">+ Add Customer</string>
     <string name="discard">Discard</string>
     <string name="addnewcustomer">Add New Customer</string>
+    <string name="colourtheme">Colour Theme</string>
+    <string name="updatecalender">Update Calendar</string>
     <string-array name="type">
         <item>Permanent</item>
         <item>Contract</item>

@@ -18,13 +18,13 @@ import com.hubwallet.apptspos.Adapters.ColourthemeAdapter;
 import com.hubwallet.apptspos.R;
 import com.hubwallet.apptspos.Utils.ColorPikInterface;
 import com.hubwallet.apptspos.Utils.CommanInterface;
+import com.hubwallet.apptspos.Utils.GridSpacingItemDecoration;
 import com.hubwallet.apptspos.Utils.SpacesItemDecoration;
 
 import java.util.ArrayList;
 
 public class ColourThemeFragment extends Fragment implements ColorPikInterface {
-    private RecyclerView recyclerView;
-    private ArrayList<Integer> colourList = new ArrayList<>();
+    private final ArrayList<Integer> colourList = new ArrayList<>();
     ColourthemeAdapter adapter;
     LinearLayout header;
 
@@ -34,10 +34,15 @@ public class ColourThemeFragment extends Fragment implements ColorPikInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_colour_theme, container, false);
-        recyclerView = view.findViewById(R.id.colourList);
-        LinearLayoutManager layoutManager = new GridLayoutManager(getContext(), 4);
+        RecyclerView recyclerView = view.findViewById(R.id.colourList);
+        LinearLayoutManager layoutManager = new GridLayoutManager(getContext(), 6);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.addItemDecoration(new SpacesItemDecoration(8));
+       // recyclerView.addItemDecoration(new SpacesItemDecoration(2));
+
+        int spanCount = 6; // 3 columns
+        int spacing = 50; // 50px
+        boolean includeEdge = true;
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
         header = ((NavigationActivity) this.getActivity()).findViewById(R.id.headerBg);
         //   ColourModel model = new ColourModel();
         //   model.setColour(Color.parseColor("#fe0000"));
